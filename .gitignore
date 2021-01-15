@@ -1,0 +1,6 @@
+/bin/helicopterSound.app/
+bin/helicopterSoundDebug.app/
+/obj/
+/.vscode/
+*.DS_Store
+*.csv
