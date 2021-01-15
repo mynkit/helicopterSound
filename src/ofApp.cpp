@@ -65,17 +65,17 @@ void ofApp::update(){
 		lastSent = now;
 	}
     
-    if (angle > 0 && angle < 5) {
+    if (angle > 0 && angle <= 5) {
         myHelicopterSound->resetHelicopterSpeed(myHelicopterSound->helicopterSpeed, true, 0.);
-    } else if (angle > 5 && angle < 60) {
+    } else if (angle > 5 && angle <= 60) {
         myHelicopterSound->resetHelicopterSpeed(myHelicopterSound->helicopterSpeed, true, 0.05);
-    } else if (angle > 60 && angle < 90) {
+    } else if (angle > 60 && angle <= 90) {
         myHelicopterSound->resetHelicopterSpeed(myHelicopterSound->helicopterSpeed, true, 0.1);
-    } else if (angle < 0 && angle > -5) {
+    } else if (angle < 0 && angle >= -5) {
         myHelicopterSound->resetHelicopterSpeed(myHelicopterSound->helicopterSpeed, false, 0.);
-    } else if (angle < -5 && angle > -60) {
+    } else if (angle < -5 && angle >= -60) {
         myHelicopterSound->resetHelicopterSpeed(myHelicopterSound->helicopterSpeed, false, 0.1);
-    } else if (angle < -60 && angle > -90) {
+    } else if (angle < -60 && angle >= -90) {
         myHelicopterSound->resetHelicopterSpeed(myHelicopterSound->helicopterSpeed, false, 0.2);
     }
 
