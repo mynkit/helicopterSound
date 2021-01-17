@@ -3,7 +3,6 @@
 #include "ofMain.h"
 #include "ofxNetwork.h"
 #include "soundEffects/helicopterSound.hpp"
-#include "ofMath.h"
 
 class ofApp : public ofBaseApp{
 
